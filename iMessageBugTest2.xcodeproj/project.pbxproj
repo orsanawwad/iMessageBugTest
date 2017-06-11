@@ -13,6 +13,9 @@
 		E14546361EEC8BEF0099D21F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14546351EEC8BEF0099D21F /* MessagesViewController.swift */; };
 		E14546391EEC8BEF0099D21F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14546371EEC8BEF0099D21F /* MainInterface.storyboard */; };
 		E145463B1EEC8BEF0099D21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E145463A1EEC8BEF0099D21F /* Assets.xcassets */; };
+		E14546491EEC8D020099D21F /* 344.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E14546481EEC8D020099D21F /* 344.mp4 */; };
+		E145464B1EEC8D410099D21F /* source.gif in Resources */ = {isa = PBXBuildFile; fileRef = E145464A1EEC8D410099D21F /* source.gif */; };
+		E1D723061EEC917E00A62E04 /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D723051EEC917E00A62E04 /* mario.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E14546381EEC8BEF0099D21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E145463A1EEC8BEF0099D21F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E145463C1EEC8BEF0099D21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14546481EEC8D020099D21F /* 344.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 344.mp4; sourceTree = "<group>"; };
+		E145464A1EEC8D410099D21F /* source.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source.gif; sourceTree = "<group>"; };
+		E1D723051EEC917E00A62E04 /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 		E14546341EEC8BEF0099D21F /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				E145464A1EEC8D410099D21F /* source.gif */,
+				E14546481EEC8D020099D21F /* 344.mp4 */,
+				E1D723051EEC917E00A62E04 /* mario.png */,
 				E14546351EEC8BEF0099D21F /* MessagesViewController.swift */,
 				E14546371EEC8BEF0099D21F /* MainInterface.storyboard */,
 				E145463A1EEC8BEF0099D21F /* Assets.xcassets */,
@@ -201,8 +210,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14546491EEC8D020099D21F /* 344.mp4 in Resources */,
 				E145463B1EEC8BEF0099D21F /* Assets.xcassets in Resources */,
+				E1D723061EEC917E00A62E04 /* mario.png in Resources */,
 				E14546391EEC8BEF0099D21F /* MainInterface.storyboard in Resources */,
+				E145464B1EEC8D410099D21F /* source.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +417,7 @@
 				E14546411EEC8BEF0099D21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E14546431EEC8BEF0099D21F /* Build configuration list for PBXNativeTarget "iMessageBugTest2" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				E14546451EEC8BEF0099D21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

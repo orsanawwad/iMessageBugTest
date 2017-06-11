@@ -14,12 +14,63 @@ class MessagesViewController: MSMessagesAppViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        
+        if let filepath = Bundle.main.path(forResource: "mario", ofType: "png") {
+            do {
+                let url = URL(string: "file://" + filepath)
+                stickerView.sticker = try! MSSticker(contentsOfFileURL: url!, localizedDescription: "ETET")
+            } catch {
+                // contents could not be loaded
+            }
+        } else {
+            // example.txt not found!
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    @IBOutlet weak var stickerView: MSStickerView! {
+        didSet {
+
+        }
+    }
+    
+    
+    
+    
+    @IBAction func sendClip(_ sender: UIButton) {
+        if let filepath = Bundle.main.path(forResource: "344", ofType: "mp4") {
+            do {
+                let url = URL(string: "file://" + filepath)
+                let conversation = self.activeConversation!
+                conversation.insertAttachment(url!, withAlternateFilename: nil, completionHandler: { (error) in
+                    print(error)
+                })
+            } catch {
+                // contents could not be loaded
+            }
+        } else {
+            // example.txt not found!
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // MARK: - Conversation Handling
     
